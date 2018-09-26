@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8e0750c01754052973d598824f1a86d)](https://www.codacy.com/app/murilogontijo/meat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=murilogontijo/meat&amp;utm_campaign=Badge_Grade)
+
 # Trabalho de Manutenção de Software
 
 
