@@ -2,10 +2,10 @@
 
 
 ## Documentação
-[Documento de requisitos (incluindo regras de negócio)](https://github.com/murilogontijo/meat/docs/Documento-Requisitos)
-[Documento de arquitetura](https://github.com/murilogontijo/meat/docs/Documento-Arquitetura)
-[Modelo de dados](https://github.com/murilogontijo/meat/docs/Modelo-Dados)
-Comentários no código fonte
+* [Documento de requisitos (incluindo regras de negócio)](https://github.com/murilogontijo/meat/docs/Documento-Requisitos)
+* [Documento de arquitetura](https://github.com/murilogontijo/meat/docs/Documento-Arquitetura)
+* [Modelo de dados](https://github.com/murilogontijo/meat/docs/Modelo-Dados)
+* Comentários no código fonte
 
 
 ### Como iniciar o sistema
