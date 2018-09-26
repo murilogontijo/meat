@@ -15,7 +15,7 @@
 * [Ismael Junior](https://github.com/ismaeljcjunior)
 
 ### Como iniciar o sistema
-1. Primeiramente instale o Node.js, Angular Cli e o Json-Server.
+1. Primeiramente instale o [Node.js](https://nodejs.org/en/download/), [Angular Cli](https://cli.angular.io) e o [Json-Server](https://github.com/typicode/json-server#getting-started).
 1. Após a instalação, pelo CMD, vá no repositório e execute o seguinte comando: **npm install**
 1. Feito isso, no mesmo repositório execute o comando: **json-server db.json**
 1. Abra um novo CMD e vá no mesmo repositório, em seguida execute o comando: **ng serve**
