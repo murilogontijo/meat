@@ -7,6 +7,12 @@
 * [Modelo de dados](https://github.com/murilogontijo/meat/tree/master/docs/Modelo-Dados)
 * Comentários no código fonte
 
+### Integrantes do Grupo
+* [Murilo Gontijo](https://github.com/murilogontijo)
+* [Marcos Vieira](https://github.com/markgyn)
+* [Tony Freitas](https://github.com/tonymfreitas)
+* [Raylan Cruz](https://github.com/raylancruz)
+* [Ismael Junior](https://github.com/ismaeljcjunior)
 
 ### Como iniciar o sistema
 1. Primeiramente instale o Node.js, Angular Cli e o Json-Server.
