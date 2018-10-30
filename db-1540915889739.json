@@ -394,22 +394,6 @@
         }
       ],
       "id": 1
-    },
-    {
-      "name": "Marcos",
-      "email": "marcosvieirareal@gmail.com",
-      "emailConfirmation": "marcosvieirareal@gmail.com",
-      "address": "Rua 88",
-      "number": "553",
-      "optionalAddress": "",
-      "paymentOption": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "donut"
-        }
-      ],
-      "id": 2
     }
   ]
 }
