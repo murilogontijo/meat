@@ -3,7 +3,11 @@ class Order {
     public address: string,
     public number: number,
     public optionalAddress: string,
-    public paymentOption: string,
+    public dinheiro: number,
+    public numeroCartao: string,
+    public codigoCartao: string,
+    public vencimentoCartao: string,
+    public paymentOption: any[] = [],
     public orderItems: OrderItem[] = []
   ){}
 }

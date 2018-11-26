@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, forwardRef } from '@angular/core';
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms'
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms'
 
-import {RadioOption} from './radio-option.model'
+import { RadioOption } from './radio-option.model'
 
 @Component({
   selector: 'mt-radio',
@@ -9,7 +9,7 @@ import {RadioOption} from './radio-option.model'
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(()=>RadioComponent),
+      useExisting: forwardRef(() => RadioComponent),
       multi: true
     }
   ]
@@ -27,9 +27,41 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
   ngOnInit() {
   }
 
-  setValue(value: any){
+  setValue(value: any) {
     this.value = value
+    this.setSelectPagamento(value)
     this.onChange(this.value)
+  }
+
+  setSelectPagamento(tipoPagamento: string) {
+    this.options.forEach(o => {
+      if (this.eCartao(tipoPagamento)) {
+        if (tipoPagamento.includes(o.value) && !o.selected) {
+          this.clearSelectCartoes()
+          o.selected = true
+        } else if (tipoPagamento.includes(o.value) && o.selected) {
+          o.selected = false
+        }
+      } else {
+        if (tipoPagamento.includes(o.value) && !o.selected) {
+          o.selected = true
+        } else if (tipoPagamento.includes(o.value) && o.selected) {
+          o.selected = false
+        }
+      }
+    })
+  }
+
+  clearSelectCartoes() {
+    this.options.forEach(o => {
+      if (this.eCartao(o.value)) {
+        o.selected = false
+      }
+    })
+  }
+
+  eCartao(tipoPagamento: string) {
+    return !tipoPagamento.includes('MON')
   }
 
   /**
@@ -47,13 +79,13 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
   /**
    * Set the function to be called when the control receives a touch event.
    */
-  registerOnTouched(fn: any): void {}
+  registerOnTouched(fn: any): void { }
   /**
    * This function is called when the control status changes to or from "DISABLED".
    * Depending on the value, it will enable or disable the appropriate DOM element.
    *
    * @param isDisabled
    */
-  setDisabledState?(isDisabled: boolean): void {}
+  setDisabledState?(isDisabled: boolean): void { }
 
 }

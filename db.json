@@ -8,7 +8,9 @@
       "rating": 4.9,
       "imagePath": "assets/img/restaurants/breadbakery.png",
       "about": "A Bread & Brakery tem 40 anos de mercado. Fazemos os melhores doces e pães. Compre e confira.",
-      "hours": "Funciona de segunda à sexta, de 8h às 23h"
+      "hours": "Funciona de segunda à sexta, de 8h às 23h",
+      "startingTime": "8",
+      "finalTime": "23"
     },
     {
       "id": "burger-house",
@@ -18,7 +20,9 @@
       "rating": 3.5,
       "imagePath": "assets/img/restaurants/burgerhouse.png",
       "about": "40 anos se especializando em trash food.",
-      "hours": "Funciona todos os dias, de 10h às 22h"
+      "hours": "Funciona todos os dias, de 10h às 22h",
+      "startingTime": "10",
+      "finalTime": "22"
     },
     {
       "id": "coffee-corner",
@@ -28,7 +32,9 @@
       "rating": 4.8,
       "imagePath": "assets/img/restaurants/coffeecorner.png",
       "about": "A Coffe Corner foi eleita a melhor cafeteria da cidade.",
-      "hours": "Funciona de segunda à sábado, de 6h às 22h"
+      "hours": "Funciona de segunda à sábado, de 6h às 22h",
+      "startingTime": "6",
+      "finalTime": "22"
     },
     {
       "id": "green-food",
@@ -38,7 +44,9 @@
       "rating": 4.1,
       "imagePath": "assets/img/restaurants/greenfood.png",
       "about": "Comida saudável é no Green Food. Compramos barato, vendemos caro. ;)",
-      "hours": "Somente em horário de almoço, das 11h às 15h"
+      "hours": "Somente em horário de almoço, das 11h às 15h",
+      "startingTime": "11",
+      "finalTime": "25"
     },
     {
       "id": "ice-cream",
@@ -48,7 +56,9 @@
       "rating": 4.5,
       "imagePath": "assets/img/restaurants/icy.png",
       "about": "A Ice Cream é uma sorveteria inovadora.",
-      "hours": "Funciona todos os dias, de 10h às 1h"
+      "hours": "Funciona todos os dias, de 10h às 1h",
+      "startingTime": "10",
+      "finalTime": "18"
     },
     {
       "id": "tasty-treats",
@@ -58,7 +68,9 @@
       "rating": 4.4,
       "imagePath": "assets/img/restaurants/tasty.png",
       "about": "A doceria com mais tradição da cidade",
-      "hours": "Funciona de segunda à sábado, de 8h às 23h"
+      "hours": "Funciona de segunda à sábado, de 8h às 23h",
+      "startingTime": "0",
+      "finalTime": "24"
     }
   ],
   "menu": [
@@ -410,6 +422,226 @@
         }
       ],
       "id": 2
+    },
+    {
+      "name": "Tony William",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "Rua 1A",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": "CRED",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "TONY W",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "rua 1a",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": "DEB",
+      "dinheiro": "10",
+      "numeroCartao": "12312",
+      "codigoCartao": "123",
+      "vencimentoCartao": "12",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "TONY ",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "rua 1a",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": "DEB",
+      "dinheiro": "10",
+      "numeroCartao": "10",
+      "codigoCartao": "10",
+      "vencimentoCartao": "10",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Tony w",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "rua 1a",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        "MON",
+        "DEB"
+      ],
+      "dinheiro": "1",
+      "numeroCartao": "1",
+      "codigoCartao": "1",
+      "vencimentoCartao": "1",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cake"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "TONY W",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "RUA 1A",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        "MON"
+      ],
+      "dinheiro": "1",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "TESTE",
+      "email": "teste@gmail.com",
+      "emailConfirmation": "teste@gmail.com",
+      "address": "teste ",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        {
+          "payment": "MON",
+          "valor": "1"
+        },
+        {
+          "payment": "DEB",
+          "numero": "2",
+          "codigo": "4",
+          "vencimento": "3"
+        }
+      ],
+      "dinheiro": "1",
+      "numeroCartao": "2",
+      "codigoCartao": "4",
+      "vencimentoCartao": "3",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Tony W",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "RUa 1a",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        {
+          "payment": "MON",
+          "valor": "1"
+        },
+        {
+          "payment": "DEB",
+          "numero": "1",
+          "codigo": "2",
+          "vencimento": "2"
+        }
+      ],
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Tony W",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "Rua 1a",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        {
+          "payment": "MON",
+          "valor": "10"
+        },
+        {
+          "payment": "DEB",
+          "valor": 36,
+          "numero": "1",
+          "codigo": "1",
+          "vencimento": "1"
+        }
+      ],
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        },
+        {
+          "quantity": 1,
+          "menuId": "straw"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "TONY W",
+      "email": "tony@gmail.com",
+      "emailConfirmation": "tony@gmail.com",
+      "address": "Rua 1A",
+      "number": "",
+      "optionalAddress": "",
+      "paymentOption": [
+        {
+          "payment": "MON",
+          "valor": "10"
+        },
+        {
+          "payment": "DEB",
+          "valor": 44,
+          "numero": "1",
+          "codigo": "1",
+          "vencimento": "1"
+        }
+      ],
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup"
+        },
+        {
+          "quantity": 1,
+          "menuId": "straw"
+        }
+      ],
+      "id": 11
     }
   ]
 }

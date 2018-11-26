@@ -8,4 +8,6 @@ export interface Restaurant {
   imagePath: string
   hours?: string
   about?: string
+  startingTime: number
+  finalTime: number
 }

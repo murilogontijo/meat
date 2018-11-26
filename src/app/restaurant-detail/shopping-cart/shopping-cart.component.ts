@@ -39,6 +39,10 @@ export class ShoppingCartComponent implements OnInit {
     this.shoppingCartService.clear()
   }
 
+  decreaseQty(item: any) {
+    this.shoppingCartService.decreaseQty(item)
+  }
+
   removeItem(item: any){
     this.shoppingCartService.removeItem(item)
   }

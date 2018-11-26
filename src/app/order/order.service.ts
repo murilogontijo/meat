@@ -49,4 +49,8 @@ export class OrderService {
                     .map(order => order.id)
   }
 
+  getTotalVenda(): number {
+    return this.cartService.total()
+  }
+
 }

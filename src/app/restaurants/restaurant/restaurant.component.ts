@@ -19,12 +19,42 @@ import {Restaurant} from './restaurant.model'
 export class RestaurantComponent implements OnInit {
 
   restaurantState = 'ready'
+  fechado: boolean = false
+  urlRestaurant: string = ''
 
   @Input() restaurant: Restaurant
 
   constructor() { }
 
   ngOnInit() {
+    this.estaFechado()
   }
+
+  estaFechado() {
+    let startingTime: number = this.restaurant.startingTime
+    let finalTime: number = this.restaurant.finalTime
+    let currentTime: number = new Date().getHours()
+    this.fechado = !((currentTime >= startingTime) && (currentTime <= finalTime))
+    if(!this.fechado) {
+      this.urlRestaurant = '/restaurants'
+    }
+  }
+
+  getRouterLinkRestaurant() {
+    if(!this.fechado) {
+      return ['/restaurants', this.restaurant.id]
+    } else {
+      return null
+    }
+  }
+  
+  getClass() {
+    if(!this.fechado) {
+      return 'place-info-box'
+    } else {
+      return 'place-info-box-disabled'
+    }
+  }
+
 
 }

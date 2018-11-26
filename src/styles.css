@@ -90,6 +90,22 @@ body {
   width: 20%;
   float: right;
 }
+
+.place-info-box-close {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  width: 20%;
+  float: right;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
 .place-info-box-more {
   display: block;
 }
@@ -276,4 +292,32 @@ body {
 .search-bar {
     opacity: 0;
     max-height: 0px;
+}
+
+.disabled-restaurant {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.place-info-box-disabled {
+  color: #555;
+  display: block;
+  min-height: 120px;
+  background: #ccc;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.place-info-box-disabled small {
+  font-size: 14px;
+}
+.place-info-box-disabled .progress {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 5px -10px 5px -10px;
+  height: 2px;
+}
+.place-info-box-disabled .progress,
+.place-info-box-disabled .progress .progress-bar {
+  border-radius: 0;
 }
