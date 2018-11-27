@@ -1,17 +1,34 @@
 <!-- INICIO DO CONTEUDO -->
-  <section class="content-header">
-  </section>
+<section class="content-header">
+</section>
 
-  <section class="content">
-    <div class="jumbotron">
-      <h2>Pedido Conluído</h2>
-      <p>Seu pedido foi recebido pelo restaurante. Prepare a mesa que a comida está chegando!</p>
-      <p><b>Avalie</b> sua experiência:</p>
-      <p><mt-rating (rated)="rate()"></mt-rating></p>
-      <p *ngIf="rated">
-        Obrigado pela sua avaliação!
+<section class="content">
+  <div class="jumbotron">
+    <h2>Pedido Conluído</h2>
+    <p>Seu pedido foi recebido pelo restaurante. Prepare a mesa que a comida está chegando!</p>
+    <div *ngIf="!rated">
+      <p>Envie-nos sua avaliação</p>
+      <p>
+        <mt-rating></mt-rating>
       </p>
+      <div class="form-group row">
+        <div class="col-md-8 col-md-offset-2">
+          <input type="text" class="form-control" name="nome" [(ngModel)]="nome" placeholder="Seu nome">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-8 col-md-offset-2">
+          <input type="text" class="form-control" name="comentario" [(ngModel)]="comentario" placeholder="Insira um comentário">
+        </div>
+      </div>
+      <div class="row">
+        <button (click)="rate()" class="btn-lg btn-space btn-primary">Enviar</button>
+      </div>
     </div>
+    <p *ngIf="rated">
+      <b>Obrigado pela sua avaliação!</b>
+    </p>
+  </div>
 
-  </section>
-  <!-- FIM DO CONTEUDO -->
+</section>
+<!-- FIM DO CONTEUDO -->

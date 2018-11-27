@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations'
 
 import {Restaurant} from './restaurant.model'
+import { RestaurantService } from "app/restaurants/restaurant/restaurant.service";
 
 @Component({
   selector: 'mt-restaurant',
@@ -24,7 +25,7 @@ export class RestaurantComponent implements OnInit {
 
   @Input() restaurant: Restaurant
 
-  constructor() { }
+  constructor(private restaurantService: RestaurantService) { }
 
   ngOnInit() {
     this.estaFechado()
@@ -54,6 +55,10 @@ export class RestaurantComponent implements OnInit {
     } else {
       return 'place-info-box-disabled'
     }
+  }
+
+  selecionarRestaurant(restaurant: Restaurant) {
+    this.restaurantService.setRestaurante(restaurant)
   }
 
 

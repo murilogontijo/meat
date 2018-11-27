@@ -49,6 +49,15 @@ export class OrderService {
                     .map(order => order.id)
   }
 
+   addReview(review: any): Observable<string> {
+    const headers = new Headers()
+    headers.append('Content-Type', 'application/json')
+    return this.http.post(`${MEAT_API}/reviews`,
+                          JSON.stringify(review),
+                          new RequestOptions({headers: headers}))
+                    .map(response=> response.json())
+  }
+
   getTotalVenda(): number {
     return this.cartService.total()
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { RestaurantService } from "app/restaurants/restaurant/restaurant.service";
 
 @Component({
   selector: 'mt-rating',
@@ -14,13 +15,14 @@ export class RatingComponent implements OnInit {
 
   previousRate: number
 
-  constructor() { }
+  constructor(private retaurantService: RestaurantService) { }
 
   ngOnInit() {
   }
 
   setRate(r: number){
     this.rate = r
+    this.retaurantService.setRating(r)
     this.previousRate = undefined
     this.rated.emit(this.rate)
   }

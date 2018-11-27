@@ -1,0 +1,26 @@
+<!-- INICIO DO CONTEUDO -->
+<section class="content-header">
+</section>
+
+<section class="content">
+  <div class="jumbotron row">
+    <h2>Seu pedido foi recebido pelo restaurante com sucesso!</h2>
+    <div class="col-md-12">
+      <div class="row col-md-2 col-md-offset-1">
+        <img class="img img-responsive" src="../../assets/img/gif-check.gif" alt="">
+        <label class="text-center">Pedido recebido!</label>
+      </div>
+      <div class="row col-md-2 col-md-offset-2" *ngIf="aguardando">
+        <img class="img img-responsive" src="../../assets/img/gif-loading.gif" alt="">
+        <label class="text-center">Aguardando confecção do pedido!</label>
+      </div>
+      <div class="row col-md-2 col-md-offset-2" *ngIf="pronto">
+        <img class="img img-responsive" style="width:500px; height:150px;" src="../../assets/img/delivery-start.gif" alt="">
+        <label class="text-center">Pedido à caminho</label>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<!-- FIM DO CONTEUDO -->

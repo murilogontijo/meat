@@ -1,4 +1,4 @@
-<a [routerLink]="getRouterLinkRestaurant()" [class.disabled-restaurant]="fechado">
+<a [routerLink]="getRouterLinkRestaurant()" [class.disabled-restaurant]="fechado" (click)="selecionarRestaurant(restaurant)">
   <div [class]="getClass()" [@restaurantAppeared]="restaurantState">
     <span class="place-info-box-icon"><img [src]="restaurant.imagePath"/></span>
 
